@@ -22,6 +22,37 @@ The system allows users to securely register, authenticate, and manage their per
 - RESTful API architecture followed
 
 ---
+## ☁️ Cloudinary Integration (Media Storage)
+
+This project uses **Cloudinary** for secure cloud-based storage of user avatar images during registration and profile updates.
+
+### 🔧 Purpose
+- Store user avatar images remotely
+- Avoid storing large media files on the backend server
+- Automatically handle image uploads and delivery via URLs
+
+### 🛠️ Implementation Details
+- Images are uploaded using the official **Cloudinary Node.js SDK**
+- File upload is handled using **Multer**
+- After successful upload, the local file is deleted from the server to save storage
+- The generated Cloudinary URL is stored in the database (`avatar_url` column)
+
+### 📂 Usage Location
+- **Backend Utility:** `config/cloudinary.js`
+- **Used In:** User registration API (`/api/auth/register`)
+
+### 🔐 Security Note
+- Cloudinary credentials are configured in the backend
+- In production, these credentials should be stored in **environment variables (`.env`)** instead of hardcoding
+
+### 📌 Example Flow
+1. User uploads avatar during registration
+2. Multer saves the image temporarily on the server
+3. Image is uploaded to Cloudinary
+4. Cloudinary returns a public image URL
+5. URL is stored in the database
+6. Local file is deleted
+---
 
 ## Setup / Run Instructions
 
