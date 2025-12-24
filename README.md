@@ -35,13 +35,14 @@ Ensure you have the following installed:
 ---
 
 ### Backend Setup
-
+```bash
 cd Backend
 npm install
 npm run dev
 
-
+---
 ### Frontend Setup
+
 cd Frontend
 npm install
 npm run dev
