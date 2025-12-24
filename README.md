@@ -81,20 +81,48 @@ Include the token in request headers:
 Authorization: Bearer <your_jwt_token>
 ````
 
-🗄️ Database Schema
-users table
-Column Name	Type	Description
-user_id	INT (PK)	Unique user ID
-first_name	VARCHAR	First name
-middle_name	VARCHAR	Middle name (optional)
-last_name	VARCHAR	Last name
-email	VARCHAR	Unique email
-password_hash	VARCHAR	Hashed password
-contact_number	VARCHAR(10)	Phone number
-birthdate	DATE	Date of birth
-gender	ENUM	Male / Female / Other
-state	VARCHAR	Indian state
-aadhar_id	TEXT	Encrypted Aadhaar ID
-avatar_url	TEXT	Cloudinary image URL
-created_at	TIMESTAMP	Account creation time
-updated_at	TIMESTAMP	Last update time
+## 🗄️ Database Schema
+
+### 📋 `users` Table
+
+| Column Name | Type | Description |
+|-----------|------|------------|
+| user_id | INT (PK) | Unique user ID |
+| first_name | VARCHAR | First name |
+| middle_name | VARCHAR | Middle name (optional) |
+| last_name | VARCHAR | Last name |
+| email | VARCHAR | Unique email |
+| password_hash | VARCHAR | Hashed password |
+| contact_number | VARCHAR(10) | Phone number |
+| birthdate | DATE | Date of birth |
+| gender | ENUM | Male / Female / Other |
+| state | VARCHAR | Indian state |
+| aadhar_id | TEXT | Encrypted Aadhaar ID |
+| avatar_url | TEXT | Cloudinary image URL |
+| created_at | TIMESTAMP | Account creation time |
+| updated_at | TIMESTAMP | Last update time |
+
+## 🤖 AI Tool Usage Log
+
+### 🧠 AI Tools Used
+- **ChatGPT** **Claude**
+
+---
+
+### 🛠️ AI-Assisted Tasks
+- Designed REST API structure and route naming
+- Implemented Aadhaar encryption logic
+- Helped structure JWT authentication middleware
+- Frontend form validation logic
+- React Dashboard UI improvements
+- Error handling and debugging runtime issues
+- README documentation formatting
+
+---
+
+### ⭐ Effectiveness Score
+**Score:** 3 / 5
+
+**Justification:**  
+AI tools significantly reduced development time by assisting with boilerplate code, debugging complex Node.js module issues, and structuring APIs correctly.  
+Some AI-generated suggestions required manual debugging (especially around SQL queries and module systems), but overall productivity improved substantially.
