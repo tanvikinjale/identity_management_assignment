@@ -36,7 +36,6 @@ Ensure you have the following installed:
 
 ### Backend Setup
 
-```bash
 cd Backend
 npm install
 npm run dev
@@ -46,3 +45,17 @@ npm run dev
 cd Frontend
 npm install
 npm run dev
+
+API Documentation
+Authentication APIs
+Method	Endpoint	Description
+POST	/api/auth/register	Register new user
+POST	/api/auth/login	Login user
+User APIs (Protected)
+Method	Endpoint	Description
+GET	/api/users	Get logged-in user profile
+GET	/api/users/:id	Get user by ID
+PUT	/api/users/updateuser	Update user profile
+DELETE	/api/users/:id	Delete user
+
+Authentication is handled via JWT Bearer Token.
