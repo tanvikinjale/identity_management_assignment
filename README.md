@@ -28,6 +28,7 @@ The system allows users to securely register, authenticate, and manage their per
 ### Prerequisites
 Ensure you have the following installed:
 - Node.js (v18+ recommended)
+- react.js
 - MySQL
 - npm / yarn
 - Git
@@ -78,3 +79,22 @@ Include the token in request headers:
 
 ```http
 Authorization: Bearer <your_jwt_token>
+````
+
+🗄️ Database Schema
+users table
+Column Name	Type	Description
+user_id	INT (PK)	Unique user ID
+first_name	VARCHAR	First name
+middle_name	VARCHAR	Middle name (optional)
+last_name	VARCHAR	Last name
+email	VARCHAR	Unique email
+password_hash	VARCHAR	Hashed password
+contact_number	VARCHAR(10)	Phone number
+birthdate	DATE	Date of birth
+gender	ENUM	Male / Female / Other
+state	VARCHAR	Indian state
+aadhar_id	TEXT	Encrypted Aadhaar ID
+avatar_url	TEXT	Cloudinary image URL
+created_at	TIMESTAMP	Account creation time
+updated_at	TIMESTAMP	Last update time
