@@ -105,7 +105,8 @@ Authorization: Bearer <your_jwt_token>
 ## 🤖 AI Tool Usage Log
 
 ### 🧠 AI Tools Used
-- **ChatGPT** **Claude**
+- **ChatGPT**
+- **Claude**
 
 ---
 
