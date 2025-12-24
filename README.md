@@ -39,3 +39,10 @@ Ensure you have the following installed:
 ```bash
 cd Backend
 npm install
+npm run dev
+
+
+### Frontend Setup
+cd Frontend
+npm install
+npm run dev
