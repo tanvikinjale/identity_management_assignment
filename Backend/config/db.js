@@ -2,10 +2,10 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'tanvi28', 
-  database: 'user_management'
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 }).promise() // to use async await instead of callback
 
 // const [result] = connection.query("SELECT * FROM login");
