@@ -48,16 +48,16 @@ npm run dev
 ```
 ---
 
-API Documentation
-Authentication APIs
+📡 API Documentation
+🔐 Authentication APIs
 Method	Endpoint	Description
-POST	/api/auth/register	Register new user
-POST	/api/auth/login	Login user
-User APIs (Protected)
+POST	/api/auth/register	Register a new user (with avatar upload)
+POST	/api/auth/login	Login user and receive JWT token
+👤 User APIs (Protected)
 Method	Endpoint	Description
-GET	/api/users	Get logged-in user profile
-GET	/api/users/:id	Get user by ID
-PUT	/api/users/updateuser	Update user profile
-DELETE	/api/users/:id	Delete user
+GET	/api/user	Get logged-in user profile
+GET	/api/user/:id	Get user profile by ID
+PUT	/api/user/updateuser	Update user profile
+DELETE	/api/user/:id	Delete user
 
 Authentication is handled via JWT Bearer Token.
